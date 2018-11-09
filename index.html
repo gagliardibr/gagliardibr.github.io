@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1, text/html, charset=utf-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+   
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+.columnInformtion {
+    float: left;
+    width: 75%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.bigColumn{
+    float: right;
+    width: 75%
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+    .bigColumn{
+        width: 50%;
+        float: left
+        
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columnInformtion {
+        width: 100%;
+    }
+    .column {
+        width: 100%
+    }
+
+    .bigColumn{
+        width: 100%;
+        float: left
+        
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Protifólio Bruna</h1>
+<hr>
+
+<h2>PORTIFÓLIO</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://media.licdn.com/dms/image/C4D03AQFwhzyLgGV_XA/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=hYAq-IQAGuhGV2ULGeFumKHzv4DLfXm_fPS6E-paS3A" alt="FotoPerfil" style="width:100%">
+      <h3>Sobre mim</h3>
+      <p>Trabalhei durante 3 anos com administração de Recurso Humanos e no momento estou ingressando na carreira de Desenvolvimento iOS e JAVA. <br/> Atualmente estudo Análise e Desenvolvimento de Sistemas no Centro Universitário Senac - Santo Amaro aonde eu participo do projeto Apple Developer Academy aprendendo desenvolvimento iOS mobile.</p>
+    </div>
+  </div>
+
+<div  class="bigColumn" >
+    <!--Inicio 3--> 
+  <div class="columnInformtion">
+    <div class="content">
+      <h3>Informações pessoais</h3>
+      <p>Nome: Bruna Gagliardi</p>
+      <p>Data Nascimento: 03/05/1995</p>
+      <p>Telefone: (11)99178-0417</p>
+      <p>Formações: Superior Cursando</p>
+    </div>
+  </div>
+  <div class="columnInformtion">
+    <div class="content">
+      <h3>Informações academicas</h3>
+      <p>Curso: Tecnologia em Analise e Desenvolvimento de Sistemas</p>
+      <p>Intituição: Centro Universitário Senac - Santo Amaro</p>
+      <p>Situação: Cursando</p>
+      <br>
+      <p>Curso: Tecnologia em Gestão de Recursos Humanos</p>
+      <p>Intituição: Centro Universitário Senac - Santo Amaro</p>
+      <p>Situação: Concluido</p>
+    </div>
+  </div>
+  <div class="columnInformtion">
+    <div class="content">
+      <h3>Experiência</h3>
+      <p>Desenvolvedor Mobile</p>
+      <p>Triibo</p>
+      <p>09/2018 - o momento</p>
+      <br>
+      <p>Desenvolvedor IOS</p>
+      <p>Apple Developer Academy</p>
+      <p>02/2018 - o momento</p>
+    </div>
+    </div>
+  </div>
+<!-- END GRID 1-->
+
+</div>
+</body>
+</html>
